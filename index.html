@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Danila Aranha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero fade-up">
+    <img src="header_img.png" alt="Ilustração do rosto de Danila Aranha">
+
+    <h1 id="typing">Oi, eu sou a Dani</h1>
+    <p class="hero-subtitle">
+      <span id="loop-text">Estudo</span></p>
+    <p class="hero-role">Estudante de ADS • UX/UI • QA • Web leve</p>
+  </header>
+
+  <main>
+
+    <!-- SOBRE -->
+    <section class="about fade-up">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou curiosa, organizada e aprendo melhor colocando a mão na massa.
+        Gosto de transformar coisas confusas em algo claro, bonito e funcional. Disposta a aprender e evoluir com cada projeto.
+      </p>
+      <p>
+        Tenho afinidade com HTML, CSS e JavaScript básico, além de Git/GitHub, Pacote Office, linguagens JAVA e Python. Estou em busca de oportunidades para aplicar e expandir meus conhecimentos. Possuo alguns projetos web simples, bem estruturados e acessíveis - todos eles desenvolvidos academicamente.
+      </p>
+    </section>
+
+    <!-- POSTS -->
+    <section class="posts fade-up">
+      <h2>Nota de processo</h2>
+      <article class="post fade-up">
+        <p>
+          Criei essa página como um espaço de construção. Não é um portfólio fechado, nem uma vitrine perfeita.
+          Não será um blog com atualizações regulares e sim um lugar para eu testar conhecimentos e registar meus aprendizados.
+        </p>
+      </article>
+    </section>
+
+    <!-- JORNADA -->
+    <section class="journey">
+  <h2>Minha Jornada</h2>
+  <div class="journey-line">
+    <div class="level completed">
+      <div class="icon">📖</div>
+      <p>HTML/CSS</p>
+    </div>
+    <div class="level completed">
+      <div class="icon">💻</div>
+      <p>Java/Python</p>
+    </div>
+    <div class="level completed">
+      <div class="icon">🖥️</div>
+      <p>Projetos Práticos</p>
+    </div>
+    <div class="level completed">
+      <div class="icon">🎨</div>
+      <p>UX/UI & QA</p>
+    </div>
+    <div class="level loading">
+      <div class="icon">⏳</div>
+      <p>Loading...</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTATO -->
+    <section class="contact fade-up">
+      <h2>Contato</h2>
+       <div class="contact-buttons">
+    <a href="https://www.linkedin.com/in/danila-aranha/" target="_blank" class="contact-btn">
+      <span class="icon">🔗</span> LinkedIn
+    </a>
+    <a href="mailto:danilarosaaranha@yahoo.com.br" class="contact-btn">
+      <span class="icon">✉️</span> Email
+    </a>
+  </div>
+</section>
+
+    <!-- OUTROS LINKS -->
+    <section class="other-links fade-up">
+      <h2>Outros Links</h2>
+      <div class="contact-buttons">
+        <a href="https://github.com/Danila-Aranha" target="_blank" class="contact-btn">
+          <span class="icon">💻</span> GitHub
+        </a>
+      
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fade-up">
+    <p>© Danila Aranha • 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+const text = "Oi, eu sou a Dani";
+const typingElement = document.getElementById("typing");
+let index = 0;
+
+function type() {
+  if (index < text.length) {
+    typingElement.textContent += text[index];
+    index++;
+    setTimeout(type, 150); // velocidade da digitação (ms)
+  }
+}
+
+// Apaga o texto antigo e inicia a digitação
+typingElement.textContent = "";
+type();
+</script>
+
+</body>
+</html>
